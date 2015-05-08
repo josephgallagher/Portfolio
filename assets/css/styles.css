@@ -52,6 +52,7 @@ h1{
 
 .navbar-inverse{
     font-size: 18px;
+    background-color: #383838;
 }
 
 .navbar-nav {
@@ -80,6 +81,8 @@ ul li {
  float: left;
 }
 
+/*This puts a circle around the github fa icon */
+/*
 ul li a i {
  background: #222;
  color: #fff;
@@ -91,7 +94,7 @@ ul li a i {
  margin-right: 10px;
  padding-top: 12%;
 }
-
+*/
 
 #home{
 	/*background-color: #93C368*/
