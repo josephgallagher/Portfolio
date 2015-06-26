@@ -14,9 +14,12 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
     <!-- Bootstrap Core CSS file -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!-- Override CSS file - add your own CSS rules -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>jQuery UI Accordion - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script>
         function load() {
             window.location.href = "#home";
@@ -39,7 +42,8 @@
 
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -58,7 +62,8 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="https://github.com/josephgallagher"><i class="fa fa-github-square fa-2x"></i></a></li>
-                <li><a href="https://www.linkedin.com/pub/joseph-gallagher/b6/450/232"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com/pub/joseph-gallagher/b6/450/232"><i
+                        class="fa fa-linkedin-square fa-2x"></i></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -78,11 +83,16 @@
             <div id="home" class="panel">
                 <h1>Home</h1>
 
-                 <p>Welcome to my playground! My name is Joseph Gallagher, and I'm an armchair enthusiast of lots of things. In my past life
-                    I was an aspiring astronomer and classical guitarist. Anyhow, I am currently studying full-stack development at
-                    <a href ="http://codingcamp.us">Coding Campus</a> out in Provo, UT. It's an immersive, project-based
-                    12 week program in various frameworks and methodologies including Django and AngularJS. There, I'm hoping to learn a
-                    whole lot about development and creative construction, and that this may broaden my horizons for whatever lies ahead.</p>
+                <p>Welcome to my playground! My name is Joseph Gallagher, and I'm an armchair enthusiast of lots of
+                    things. In my past life
+                    I was an aspiring astronomer and classical guitarist. Anyhow, I am currently studying full-stack
+                    development at
+                    <a href="http://codingcamp.us">Coding Campus</a> out in Provo, UT. It's an immersive, project-based
+                    12 week program in various frameworks and methodologies including Django and AngularJS. There, I'm
+                    hoping to learn a
+                    whole lot about development and creative construction, and that this may broaden my horizons for
+                    whatever lies ahead.</p>
+
                 <p>Cheers!</p>
 
             </div>
@@ -94,14 +104,35 @@
 
                 <h1>Portfolio</h1>
 
-                <a href="http://recipes.josephdgallagher.com"><h3>Recipe Organizer</h3></a>
-                <p>Django powered recipe book! User-authentication w/Oauth coming soon!<p>
-                <a href="http://crowdwire.josephdgallagher.com"><h3>Crowdwire</h3></a>
-                <p>Currently in production. A crowd-sourced journalism app relying on Google Maps API. Search radius filter pending.<p>
-                <a href="https://github.com/josephgallagher/GithubRepoParser"><h3>Github Repo Parser</h3></a>
-                <p>Scrapes the Github API for a specified repo with a Python script to gather commit data for the past year.
-                <p>Next step: house info in database and serve up.
 
+                <div class="col-md-4">
+                    <h3>Recipe Book</h3>
+                    <a href="http://recipes.josephdgallagher.com"><h3><img
+                            src="assets/img/Restaurant_cutlery_circular_symbol_of_a_spoon_and_a_fork_in_a_circle_64.png"/>
+                    </h3></a>
+                    <!--<p>Django powered recipe book! User-authentication w/Oauth coming soon!</div>-->
+                </div>
+
+                <div class="col-md-4">
+                    <h3>Crowdwire</h3>
+                    <a href="http://crowdwire.josephdgallagher.com"><h3><img src="assets/img/World_location_64.png"/>
+                    </h3></a>
+                    <!--<p>Currently in production. A crowd-sourced journalism app relying on Google Maps API. Search radius filter pending.-->
+                </div>
+
+                <div class="col-md-4">
+                    <h3>Github Repo Parser</h3>
+                    <a href="https://github.com/josephgallagher/GithubRepoParser"><h3><img
+                            src="assets/img/github_cat_in_a_circle_64.png"/></h3></a>
+                    <!--<p>Scrapes the Github API for a specified repo with a Python script to gather commit data for the past year.-->
+                </div>
+
+                <div class="col-md-4">
+                    <h3>PyCart eCommerce</h3>
+                    <a href="https://github.com/Pycart/PyCart-Backend/tree/develop"><h3><img
+                            src="assets/img/Big_Shopping_Trolley_64.png"/></h3></a>
+                    <!--<p>Scrapes the Github API for a specified repo with a Python script to gather commit data for the past year.-->
+                </div>
 
             </div>
             <!-- /Portfolio -->
@@ -111,19 +142,80 @@
             <div id="about" class="panel">
                 <h1>About</h1>
 
-                <!-- Page breadcrumb -->
-                <ol class="breadcrumb">
-                    <li><a href="#about">Education</a></li>
-                    <li><a href="#about">Interests</a></li>
-                    <li class=""><a href="#about">Hmmm...What else?</a></li>
-                </ol>
 
-                <p>Welcome to my playground! My name is Joseph Gallagher, and I'm an armchair enthusiast of lots of things. In my past life
-                    I was an aspiring astronomer and classical guitarist. Anyhow, I am currently studying full-stack development at
-                    <a href ="http://codingcamp.us">Coding Campus</a> out in Provo, UT. It's an immersive, project-based
-                    12 week program in various frameworks and methodologies including Django and AngularJS. There, I'm hoping to learn a
-                    whole lot about development and creative construction, and that this may broaden my horizons for whatever lies ahead.</p>
-                <p>Cheers!</p>
+                <script>
+                    $(document).ready(function () {
+                        function close_accordion_section() {
+                            $('.accordion .accordion-section-title').removeClass('active');
+                            $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+                        }
+
+                        $('.accordion-section-title').click(function (e) {
+                            // Grab current anchor value
+                            var currentAttrValue = $(this).attr('href');
+
+                            if ($(e.target).is('.active')) {
+                                close_accordion_section();
+                            } else {
+                                close_accordion_section();
+
+                                // Add active class to section title
+                                $(this).addClass('active');
+                                // Open up the hidden content panel
+                                $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+                            }
+
+                            e.preventDefault();
+                        });
+                    });
+                </script>
+
+
+                <div class="accordion">
+                    <div class="accordion-section">
+                        <a class="accordion-section-title" href="#accordion-1">Development Background</a>
+
+                        <div id="accordion-1" class="accordion-section-content">
+                            <p>I've got a pretty solid grounding in Python...I really enjoy web-scraping and playing
+                                around with libraries like NumPy and Matplotlib for mathy and statistical computing.
+                                As a competent fullstack developer, I enjoy helping design meaningful web applications
+                                with
+                                Django and DjangoRest for data serialization, and JavaScript and AngularJS for client
+                                side
+                                productivity. I recently started in on D3 for data visualization, and I'm hoping to find
+                                an
+                                integral project for that soon. Feel free to browse through my portfolio projects for
+                                more.</p>
+                        </div>
+                        <!--end .accordion-section-content-->
+                    </div>
+                    <!--end .accordion-section-->
+
+                    <div class="accordion-section">
+                        <a class="accordion-section-title" href="#accordion-2">Education</a>
+
+                        <div id="accordion-2" class="accordion-section-content">
+                            <p>I attended <a href="http://www.math.stonybrook.edu/">Stony Brook University</a>, and
+                                obtained a B.S. in Mathematics back in 2009. In addition to a lot of theorem-proving,
+                                I've got
+                                a bit of a background in physics and computer science curricula.</p>
+                        </div>
+                        <!--end .accordion-section-content-->
+                    </div>
+                    <!--end .accordion-section-->
+
+                    <div class="accordion-section">
+                        <a class="accordion-section-title" href="#accordion-3">Fun Stuff</a>
+
+                        <div id="accordion-3" class="accordion-section-content">
+                            <p>Coming Shortly!</p>
+                        </div>
+                        <!--end .accordion-section-content-->
+                    </div>
+                    <!--end .accordion-section-->
+
+                </div>
+                <!--end .accordion-->
             </div>
             <!-- /About -->
 
@@ -161,17 +253,16 @@
 
 
             <!--<div class="panel">-->
-                <!--<ul id="find-me">-->
-                    <!--<li><a href="https://github.com/josephgallagher"><i class="fa fa-github-square fa-2x"></i></a></li>-->
-                    <!--<li><a href="https://www.linkedin.com/pub/joseph-gallagher/b6/450/232"><i-->
-                            <!--class="fa fa-linkedin-square fa-2x"></i></a></li>-->
-                <!--</ul>-->
+            <!--<ul id="find-me">-->
+            <!--<li><a href="https://github.com/josephgallagher"><i class="fa fa-github-square fa-2x"></i></a></li>-->
+            <!--<li><a href="https://www.linkedin.com/pub/joseph-gallagher/b6/450/232"><i-->
+            <!--class="fa fa-linkedin-square fa-2x"></i></a></li>-->
+            <!--</ul>-->
             <!--</div>-->
 
         </div>
     </div>
 </div>
-
 
 
 <script src="assets/js/jquery-1.11.2.min.js"></script>
